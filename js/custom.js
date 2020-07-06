@@ -1,3 +1,13 @@
+
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+$('[data-spy="scroll"]').each(function () {
+    var $spy = $(this).scrollspy('refresh')
+  })
+
 var previousScroll = 60;
 // scroll functions
 $(window).scroll(function (e) {
@@ -24,12 +34,10 @@ $(window).scroll(function (e) {
 function checkScroll() {
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
-    if ($(window).scrollTop() > startY)
-    {
+    if ($(window).scrollTop() > startY) {
         $('.navbar-transparent-color').addClass("bg-white shadow-sm");
-    } 
-    else 
-    {
+    }
+    else {
         $('.navbar-transparent-color').removeClass("bg-white shadow-sm");
     }
 }
@@ -49,8 +57,8 @@ var sticky = fotoproduk.offsetTop;
 
 function fotoSticky() {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky-top-produk")
+        navbar.classList.add("sticky-top-produk")
     } else {
-      navbar.classList.remove("sticky-top-produk");
+        navbar.classList.remove("sticky-top-produk");
     }
-  }
+}

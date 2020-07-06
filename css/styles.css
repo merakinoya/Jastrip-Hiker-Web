@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .hero {
   padding: 6rem 3rem;
   margin-bottom: 3rem;
@@ -43,10 +48,16 @@
   padding-right: 18px;
   padding-left: 18px;
 }
+
+.feather-icon-16{
+  width: 16px;
+  height: 16px;
+}
+
 @supports (position: sticky) {
     .sticky-top-produk {
       position: sticky;
-      top: 16%;
+      top: 14%;
       z-index: 1020; } }
 
 @media (min-width: 576px) {

@@ -278,9 +278,9 @@ $border-radius-sm:            .2rem ;
 
 $rounded-pill:                50rem ;
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) ;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) ;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) ;
+$box-shadow-sm:               0 .125rem .25rem rgba($gray-700, .075) ;
+$box-shadow:                  0 .5rem 1rem rgba($gray-700, .15) ;
+$box-shadow-lg:               0 1rem 3rem rgba($gray-700, .175) ;
 
 $component-active-color:      $white ;
 $component-active-bg:         $primary ;
@@ -526,7 +526,7 @@ $navbar-nav-link-padding-x:         .75rem;
 
 $navbar-brand-font-size:            $font-size-lg;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 4;
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base;
 $navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2;
 
