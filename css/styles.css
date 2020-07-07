@@ -2,13 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .hero {
   padding: 6rem 3rem;
   margin-bottom: 3rem;
-  background-image: 
-    linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 100%), 
-    url("https://source.unsplash.com/fItRJ7AHak8/1900x900");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 100%), url("https://source.unsplash.com/fItRJ7AHak8/1900x900");
   border-radius: 0rem;
 }
 
@@ -49,22 +46,25 @@ html {
   padding-left: 18px;
 }
 
-.feather-icon-16{
+.feather-icon-16 {
   width: 16px;
   height: 16px;
 }
 
 @supports (position: sticky) {
-    .sticky-top-produk {
-      position: sticky;
-      top: 14%;
-      z-index: 1020; } }
+  .sticky-top-produk {
+    position: sticky;
+    top: 14%;
+    z-index: 1020;
+  }
+}
 
 @media (min-width: 576px) {
   .hero {
     padding: 12rem 6rem;
   }
 }
+
 @media (max-width: 576px) {
   .margin-judul-page {
     margin-top: 24%;
@@ -73,4 +73,8 @@ html {
     padding-right: 0px;
     padding-left: 0px;
   }
+  .carousel-custom{
+    height: 360px;
+  }
 }
+
