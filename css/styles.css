@@ -57,15 +57,20 @@ html {
     top: 14%;
     z-index: 1020;
   }
-}
 
-@media (min-width: 576px) {
-  .hero {
-    padding: 12rem 6rem;
+  .sticky-top-tabs {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 12%;
+    z-index: 1020;
   }
 }
 
 @media (max-width: 576px) {
+  body {
+    position: relative;
+  }
+
   .margin-judul-page {
     margin-top: 24%;
   }
@@ -73,8 +78,61 @@ html {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .carousel-custom{
+  .carousel-custom {
     height: 360px;
   }
 }
 
+.flex-sm-column {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+.nav-pills .nav-link {
+  border-radius: 9.25rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #17b8b0;
+  background-color: rgb(23, 184, 176, 0.1);
+}
+
+.custom-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.custom-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Nav Scroller */
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+}

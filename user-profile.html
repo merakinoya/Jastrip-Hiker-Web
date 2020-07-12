@@ -9,8 +9,7 @@
     <!-- Bootstrap CSS Custom -->
     <link rel="stylesheet" href="css/custom.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/examples/carousel/carousel.css"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/examples/carousel/carousel.css" crossorigin="anonymous">
 
     <title>Hello, world!</title>
 
@@ -23,8 +22,7 @@
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/nav-brand.svg"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -46,8 +44,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link ml-3" href="user-profile.html">
-                                    <img class="rounded-circle mr-1 mb-1" src="https://source.unsplash.com/b1Hg7QI-zcc/24x24"
-                                        alt="Profile">
+                                    <img class="rounded-circle mr-1 mb-1" src="https://source.unsplash.com/b1Hg7QI-zcc/24x24" alt="Profile">
                                     <b>Ilham Arl</b>
                                 </a>
                             </li>
@@ -57,37 +54,133 @@
             </div>
         </nav>
     </header>
-    
 
+    
     <main role="main">
 
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="d-flex flex-row bd-highlight">
-                        <img class="mb-3 rounded-circle" src="https://source.unsplash.com/b1Hg7QI-zcc/48x48"
-                            alt="Generic placeholder image">
-                        <h2 class="mt-1 ml-3">Ilham Arl</h2>
+                <div class="col-md-4 mt-3">
+                    <div class="d-flex flex-row bd-highlight mb-4">
+                        <img class="rounded-circle mb-4" src="https://source.unsplash.com/b1Hg7QI-zcc/52x52" alt="Profile" />
+                        <div class="list-group ml-3">
+                            <h2 class="">Ilham Arl</h2>
+                            <a href="edit-profile.html">Edit Profil</a>
+                        </div>
                     </div>
 
-                    <hr>
-                    <div id="list-example" class="list-group list-group-flush sticky-top-produk">
-                        <a class="list-group-item list-group-item-action" href="#list-item-1">My Products</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-2">Transaction</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-3">Complaint</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-4">Settings</a>
+                    <div class="nav nav-pills flex-sm-column flex-row sticky-top-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+ 
+                            <a class="nav-item nav-link text-nowrap active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">My Products</a>
+
+
+                            <a class="nav-item nav-link text-nowrap" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Transaction</a>
+ 
+  
+                            <a class="nav-item nav-link text-nowrap" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Settings</a>
+
+         
+                            <a class="nav-item nav-link text-nowrap" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Change Password</a>
+
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-                        <h4 id="list-item-1">Item 1</h4>
-                        <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
-                        <h4 id="list-item-2">Item 2</h4>
-                        <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
-                        <h4 id="list-item-3">Item 3</h4>
-                        <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
-                        <h4 id="list-item-4">Item 4</h4>
-                        <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+
+
+                <div class="col-md-8 mt-3">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <h4 class="font-weight-bolder mb-4">My Products</h4>
+
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                                <div class="col mb-4">
+                                    <div class="card border-0 shadow rounded-lg">
+                                        <a class="position-absolute-custom text-white" href="" data-toggle="tooltip" data-placement="top" title="Wishlist"><i data-feather="heart"></i></a>
+                                        <img class="card-img-top rounded-top" src="https://source.unsplash.com/x9I-6yoXrXE" alt="Card image cap">
+
+                                        <div class="card-body" href="">
+
+                                            <span class="badge badge-info mb-2 mr-2">Camp</span>
+
+                                            <h4 class="card-title mb-1 font-weight-bold text-black text-capitalize">Mount Merbabu Trips
+                                            </h4>
+                                            <p><small>2 days</small> • <small>10 orang</small> </p>
+                                            <p class="card-text text-muted text-truncate">This is a wider card with supporting text below as a natural
+                                                lead-in to
+                                                additional content<a href="products-detail.html" class="text-muted stretched-link"> lihat detail</a></p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <small class="text-black-50">Last updated 3 mins ago</small>
+                                            <button class="btn btn-primary float-right">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- .row My Products -->
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 class="font-weight-bolder mb-4">Transaction</h4>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Transaction</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">001</th>
+                                            <td>Mark</td>
+                                            <td>Done</td>
+                                            <td>12 March 2020</td>
+                                            <td>Show</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">002</th>
+                                            <td>Jacob</td>
+                                            <td>Failed</td>
+                                            <td>12 March 2020</td>
+                                            <td>Show</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">003</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>12 March 2020</td>
+                                            <td>Show</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <h4 class="font-weight-bolder">Settings</h4>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <h4 class="font-weight-bolder mb-4">Change Password</h4>
+
+                                <form class="mt-4">
+                                    <div class="form-group">
+                                      <label for="old-password">Password Lama</label>
+                                      <input type="password" class="form-control" id="old-password" placeholder="Masukkan password lama Anda">
+                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                      <label for="new-password">Password Baru</label>
+                                      <input type="password" class="form-control" id="new-password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm-password">Konfirmasi Password Baru</label>
+                                        <input type="password" class="form-control" id="confirm-password">
+                                      </div>
+                                    <button type="submit" class="btn btn-primary">Save Password</button>
+                                  </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,15 +231,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
 
