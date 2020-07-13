@@ -6,7 +6,7 @@ $(function () {
 
 $('[data-spy="scroll"]').each(function () {
     var $spy = $(this).scrollspy('refresh')
-  })
+})
 
 var previousScroll = 60;
 // scroll functions
