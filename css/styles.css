@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-  padding: 12rem 6rem;
+  padding: 12rem 4rem;
   margin-bottom: 3rem;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 100%), url("https://source.unsplash.com/fItRJ7AHak8/1900x900");
   border-radius: 0rem;
@@ -75,10 +75,6 @@ body {
     position: relative;
   }
 
-  .hero {
-    padding: 6rem 1rem;
-  }
-
   .margin-judul-page {
     margin-top: 24%;
   }
@@ -92,6 +88,10 @@ body {
 
   .nav-scroller {
     height: 2.75rem;
+  }
+
+  .nav-brand-custom {
+    max-height: 42px;
   }
 }
 
@@ -117,7 +117,17 @@ body {
     visibility: visible;
     margin-top: 1rem;
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    transform: translateX(-60%);
+  }
+
+  .offcanvas-collapse .nav-item {
+    margin-top: 0.50rem;
+    margin-bottom: 0.50rem;
+  }
+
+
+  .hero {
+    padding: 8rem 0.75rem ;
   }
 }
 
@@ -144,24 +154,7 @@ body {
   margin-bottom: 0;
 }
 
-/************* Nav Scroller */
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+/*-------------- NAV SCROLLER ------------ */
 
 .nav-scroller {
   position: relative;
@@ -198,3 +191,95 @@ body {
   font-weight: 500;
   color: #343a40;
 }
+
+/*-------------- NAVBAR CUSTOM --------------------*/
+
+@media (max-width: 576px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1.25rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    text-decoration: none;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+  }
+
+  .navbar-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*------- POSITION CUSTOM -------*/
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030; }
